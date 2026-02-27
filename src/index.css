@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Cormorant Garamond", serif;
+}
+
+:root {
+  --bg: #F8F7F4;
+  --ink: #1A1A1A;
+  --line: #E5E5E1;
+  --accent: #2D5A27;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.data-grid-header {
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.data-row {
+  border-bottom: 1px solid var(--line);
+  transition: all 0.2s ease;
+}
+
+.data-row:hover {
+  background-color: #fff;
+}
+
+.severity-good { color: #059669; }
+.severity-needs-improvement { color: #D97706; }
+.severity-poor { color: #DC2626; }
+
+.bg-severity-good { background-color: #ECFDF5; border-color: #10B981; }
+.bg-severity-needs-improvement { background-color: #FFFBEB; border-color: #F59E0B; }
+.bg-severity-poor { background-color: #FEF2F2; border-color: #EF4444; }
+

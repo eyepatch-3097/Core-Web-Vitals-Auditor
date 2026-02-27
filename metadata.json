@@ -1,0 +1,5 @@
+{
+  "name": "Core Web Vitals Auditor",
+  "description": "Analyze domain sitemaps and audit Core Web Vitals scores for all pages with visual severity highlighting.",
+  "requestFramePermissions": []
+}
